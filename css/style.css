@@ -328,6 +328,19 @@ h6 {
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   position: relative;
+   overflow: hidden;
+}
+
+.sec1::after {
+   content: url('../img/sec1-bg.png');
+   position: absolute;
+   height: 100%;
+   top: 130px;
+   left: 0;
+   z-index: -1;
+   max-width: 1700px;
+   width: 100%;
 }
 
 .sec1-title {
@@ -335,6 +348,7 @@ h6 {
    font-size: 64px;
    line-height: 77px;
    color: #6266EA;
+   background-color: rgba(255, 255, 255, 0.637);
 }
 
 .sec1-subtitle {
