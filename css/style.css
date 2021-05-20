@@ -6,9 +6,11 @@ html {
 body {
    margin: 0;
 }
+
 body.lock {
    overflow: hidden;
 }
+
 html,
 body {
    line-height: 1;
@@ -225,7 +227,11 @@ h6 {
 .header {
    max-width: 100%;
    width: 100%;
+   max-height: 80px;
    padding: 25px 0;
+   position: absolute;
+   top: 0;
+   right: 0;
 }
 
 .container {
@@ -307,7 +313,111 @@ h6 {
    opacity: 1;
    bottom: 4px;
 }
+
 .menu-close,
-.header__menu-home{
+.header__menu-home {
    display: none;
+}
+
+.sec1 {
+   width: 100%;
+   min-height: 100vh;
+   padding: 110px 0 40px 0;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.sec1-title {
+   font-weight: 600;
+   font-size: 64px;
+   line-height: 77px;
+   color: #6266EA;
+}
+
+.sec1-subtitle {
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 22px;
+   color: #70718D;
+   margin-top: 16px;
+   margin-bottom: 36px;
+}
+
+.sec1-buttons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.fast-buy {
+   background: linear-gradient(180deg, #8562EA 0%, #4E61FB 100%);
+   border-radius: 8px;
+   padding: 24px 10px;
+   width: 240px;
+   font-weight: 600;
+   font-size: 14px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin-right: 10px;
+   display: block;
+   transition: transform .2s ease;
+}
+
+.fast-buy:hover {
+   transform: translateY(-3px);
+}
+
+.login:hover {
+   transform: translateY(-3px);
+}
+
+.login {
+   background: #F9F8FF;
+   transition: transform .2s ease;
+   border-radius: 8px;
+   border: 1px solid #4E61FB;
+   width: 240px;
+   padding: 22px 10px;
+   display: block;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 17px;
+   text-transform: uppercase;
+   color: #6266EA;
+}
+
+.arrow-anim {
+   width: 100%;
+   position: relative;
+   margin-top: 140px;
+   margin-bottom: 20px;
+   height: 100px;
+}
+
+.arrow-down {
+   position: absolute;
+   right: 50%;
+   transform: translateX(-50%);
+   top: 0;
+   animation: arrow-hover 1.5s linear infinite;
+   cursor: pointer;
+}
+
+
+
+@keyframes arrow-hover {
+   0% {
+      top: 0;
+   }
+
+   50% {
+      top: 10px;
+   }
+
+   100% {
+      top: 0;
+   }
 }
