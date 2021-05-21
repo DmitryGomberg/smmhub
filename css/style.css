@@ -536,13 +536,16 @@ h6 {
    background: linear-gradient(180deg, #FFFFFF 0%, #F5F7FF 100%);
    border-radius: 350px 350px 0px 0px;
    position: relative;
+   overflow: hidden;
 }
 
 .sec3::after {
    position: absolute;
    content: url('../img/sec3-bg.png');
    transform: rotate(-15deg);
-   z-index: 0;max-width: 1780px;width: 100%;
+   z-index: 0;
+   max-width: 1780px;
+   width: 100%;
 }
 
 .sec3__inner {
